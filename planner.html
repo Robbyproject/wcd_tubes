@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="id">
 
 <head>
@@ -10,182 +9,316 @@
 </head>
 
 <body>
-
-<header>
-
-    <div class="logo">
-        <h1>Menu Planner</h1>
-    </div>
-
-    <nav>
-
-        <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="planner.html">Planner</a></li>
-        </ul>
-
-    </nav>
-
-</header>
-
-<main>
-
-    <section class="planner-header">
-
-        <h2>Perencanaan Menu Makanan</h2>
-
-        <p>
-            Pilih menu makanan untuk melihat total kalori,
-            total harga, dan status keseimbangan gizi.
-        </p>
-
-    </section>
-
-    <section class="planner-layout">
-
-        <section class="menu-table-area">
-
-            <h2>Daftar Menu</h2>
-
-            <p>
-                Pilih satu atau beberapa menu untuk menyusun
-                menu makan yang sesuai dengan kebutuhan dan anggaran.
-            </p>
-
-            <table>
-
-                <caption>
-                    Daftar Menu Makanan
-                </caption>
-
-                <thead>
-
-                    <tr>
-                        <th>Gambar</th>
-                        <th>Nama Menu</th>
-                        <th>Kategori</th>
-                        <th>Kalori</th>
-                        <th>Harga</th>
-                        <th>Pilih</th>
-                    </tr>
-
-                </thead>
-
-                <tbody id="menuTableBody">
-
-                </tbody>
-
-            </table>
-
+    <header>
+        <div class="logo">
+            <h1>Menu Planner</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="planner.html">Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="planner-header">
+            <h2>Perencanaan Menu Makanan</h2>
+            <p>Pilih menu makanan untuk melihat total kalori, total harga, dan status keseimbangan gizi.</p>
         </section>
-
-        <aside class="planner-sidebar">
-
-            <section id="emptyState">
-
-                <h3>Belum Ada Menu Dipilih</h3>
-
-                <p>
-                    Silakan pilih menu dari tabel untuk memulai
-                    perencanaan menu makanan.
-                </p>
-
+        <section class="planner-layout">
+            <section class="menu-table-area">
+                <h2>Daftar Menu</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gambar</th>
+                            <th>Nama Menu</th>
+                            <th>Kategori</th>
+                            <th>Kalori</th>
+                            <th>Harga</th>
+                            <th>Pilih</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-name="Nasi Putih" data-category="Makanan Pokok" data-calories="180" data-price="5000"
+                            data-image="images/nasi-putih.jpg">
+                            <td><img src="images/Nasi-Putih.jpg" alt="Nasi Putih" width="70"></td>
+                            <td>Nasi Putih</td>
+                            <td>Makanan Pokok</td>
+                            <td>180 kkal</td>
+                            <td>Rp 5,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Nasi Goreng Spesial" data-category="Makanan Pokok" data-calories="450"
+                            data-price="18000" data-image="images/nasi-goreng-spesial.jpg">
+                            <td><img src="images/Nasi-Goreng-Spesial.jpg" alt="Nasi Goreng Spesial" width="70"></td>
+                            <td>Nasi Goreng Spesial</td>
+                            <td>Makanan Pokok</td>
+                            <td>450 kkal</td>
+                            <td>Rp 18,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Mie Goreng Jawa" data-category="Makanan Pokok" data-calories="380"
+                            data-price="16000" data-image="images/mie-goreng-jawa.jpg">
+                            <td><img src="images/Mie-Goreng-Jawa.jpg" alt="Mie Goreng Jawa" width="70"></td>
+                            <td>Mie Goreng Jawa</td>
+                            <td>Makanan Pokok</td>
+                            <td>380 kkal</td>
+                            <td>Rp 16,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Spaghetti Aglio Olio" data-category="Makanan Pokok" data-calories="420"
+                            data-price="28000" data-image="images/spaghetti-aglio-olio.jpg">
+                            <td><img src="images/Spaghetti-Aglio-Olio.jpg" alt="Spaghetti Aglio Olio" width="70"></td>
+                            <td>Spaghetti Aglio Olio</td>
+                            <td>Makanan Pokok</td>
+                            <td>420 kkal</td>
+                            <td>Rp 28,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Kentang Panggang" data-category="Makanan Pokok" data-calories="220"
+                            data-price="15000" data-image="images/kentang-panggang.jpg">
+                            <td><img src="images/Kentang-Panggang.jpg" alt="Kentang Panggang" width="70"></td>
+                            <td>Kentang Panggang</td>
+                            <td>Makanan Pokok</td>
+                            <td>220 kkal</td>
+                            <td>Rp 15,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Roti Gandum (2 lembar)" data-category="Makanan Pokok" data-calories="160"
+                            data-price="8000" data-image="images/roti-gandum.jpg">
+                            <td><img src="images/Roti-Gandum.jpg" alt="Roti Gandum (2 lembar)" width="70"></td>
+                            <td>Roti Gandum (2 lembar)</td>
+                            <td>Makanan Pokok</td>
+                            <td>160 kkal</td>
+                            <td>Rp 8,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Ayam Goreng Tepung" data-category="Lauk-Pauk" data-calories="300"
+                            data-price="17000" data-image="images/ayam-goreng-tepung.jpg">
+                            <td><img src="images/Ayam-Goreng-Tepung.jpg" alt="Ayam Goreng Tepung" width="70"></td>
+                            <td>Ayam Goreng Tepung</td>
+                            <td>Lauk-Pauk</td>
+                            <td>300 kkal</td>
+                            <td>Rp 17,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Ayam Bakar Madu" data-category="Lauk-Pauk" data-calories="280" data-price="20000"
+                            data-image="images/ayam-bakar-madu.jpg">
+                            <td><img src="images/Ayam-Bakar-Madu.png" alt="Ayam Bakar Madu" width="70"></td>
+                            <td>Ayam Bakar Madu</td>
+                            <td>Lauk-Pauk</td>
+                            <td>280 kkal</td>
+                            <td>Rp 20,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Rendang Daging Sapi" data-category="Lauk-Pauk" data-calories="380"
+                            data-price="32000" data-image="images/rendang.jpg">
+                            <td><img src="images/Rendang.jpg" alt="Rendang Daging Sapi" width="70"></td>
+                            <td>Rendang Daging Sapi</td>
+                            <td>Lauk-Pauk</td>
+                            <td>380 kkal</td>
+                            <td>Rp 32,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Tempe Orek" data-category="Lauk-Pauk" data-calories="150" data-price="8000"
+                            data-image="images/tempe-orek.jpg">
+                            <td><img src="images/Tempe-Orek.jpg" alt="Tempe Orek" width="70"></td>
+                            <td>Tempe Orek</td>
+                            <td>Lauk-Pauk</td>
+                            <td>150 kkal</td>
+                            <td>Rp 8,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Tahu Goreng" data-category="Lauk-Pauk" data-calories="120" data-price="6000"
+                            data-image="images/tahu-goreng.jpg">
+                            <td><img src="images/Tahu-Goreng.jpg" alt="Tahu Goreng" width="70"></td>
+                            <td>Tahu Goreng</td>
+                            <td>Lauk-Pauk</td>
+                            <td>120 kkal</td>
+                            <td>Rp 6,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Ikan Nila Bakar" data-category="Lauk-Pauk" data-calories="250" data-price="22000"
+                            data-image="images/ikan-nila-bakar.jpg">
+                            <td><img src="images/Ikan-Nila-Bakar.jpg" alt="Ikan Nila Bakar" width="70"></td>
+                            <td>Ikan Nila Bakar</td>
+                            <td>Lauk-Pauk</td>
+                            <td>250 kkal</td>
+                            <td>Rp 22,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Telur Dadar" data-category="Lauk-Pauk" data-calories="190" data-price="7000"
+                            data-image="images/telur-dadar.jpg">
+                            <td><img src="images/Telur-Dadar.jpg" alt="Telur Dadar" width="70"></td>
+                            <td>Telur Dadar</td>
+                            <td>Lauk-Pauk</td>
+                            <td>190 kkal</td>
+                            <td>Rp 7,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Beef Steak Sirloin" data-category="Lauk-Pauk" data-calories="420"
+                            data-price="45000" data-image="images/beef-steak-sirloin.jpg">
+                            <td><img src="images/Beef-Steak-Sirloin.jpg" alt="Beef Steak Sirloin" width="70"></td>
+                            <td>Beef Steak Sirloin</td>
+                            <td>Lauk-Pauk</td>
+                            <td>420 kkal</td>
+                            <td>Rp 45,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Tumis Kangkung" data-category="Sayur" data-calories="90" data-price="9000"
+                            data-image="images/tumis-kangkung.jpg">
+                            <td><img src="images/Tumis-Kangkung.jpg" alt="Tumis Kangkung" width="70"></td>
+                            <td>Tumis Kangkung</td>
+                            <td>Sayur</td>
+                            <td>90 kkal</td>
+                            <td>Rp 9,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Sayur Asem" data-category="Sayur" data-calories="70" data-price="8000"
+                            data-image="images/sayur-asem.jpg">
+                            <td><img src="images/Sayur-Asem.jpg" alt="Sayur Asem" width="70"></td>
+                            <td>Sayur Asem</td>
+                            <td>Sayur</td>
+                            <td>70 kkal</td>
+                            <td>Rp 8,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Capcay Kuah" data-category="Sayur" data-calories="110" data-price="13000"
+                            data-image="images/capcay-kuah.jpg">
+                            <td><img src="images/Capcay-Kuah.jpg" alt="Capcay Kuah" width="70"></td>
+                            <td>Capcay Kuah</td>
+                            <td>Sayur</td>
+                            <td>110 kkal</td>
+                            <td>Rp 13,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Salad Sayur Segar" data-category="Sayur" data-calories="80" data-price="14000"
+                            data-image="images/salad-sayur-segar.jpg">
+                            <td><img src="images/Salad-Sayur.jpg" alt="Salad Sayur Segar" width="70"></td>
+                            <td>Salad Sayur Segar</td>
+                            <td>Sayur</td>
+                            <td>80 kkal</td>
+                            <td>Rp 14,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Gado-Gado" data-category="Sayur" data-calories="280" data-price="16000"
+                            data-image="images/gado-gado.jpg">
+                            <td><img src="images/Gado-Gado.jpg" alt="Gado-Gado" width="70"></td>
+                            <td>Gado-Gado</td>
+                            <td>Sayur</td>
+                            <td>280 kkal</td>
+                            <td>Rp 16,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Pisang (1 buah)" data-category="Buah" data-calories="105" data-price="5000"
+                            data-image="images/pisang.jpg">
+                            <td><img src="images/Pisang.jpg" alt="Pisang (1 buah)" width="70"></td>
+                            <td>Pisang (1 buah)</td>
+                            <td>Buah</td>
+                            <td>105 kkal</td>
+                            <td>Rp 5,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Apel Fuji (1 buah)" data-category="Buah" data-calories="95" data-price="7000"
+                            data-image="images/apel-fuji.jpg">
+                            <td><img src="images/Apel-Fuji.jpg" alt="Apel Fuji (1 buah)" width="70"></td>
+                            <td>Apel Fuji (1 buah)</td>
+                            <td>Buah</td>
+                            <td>95 kkal</td>
+                            <td>Rp 7,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Semangka (1 potong)" data-category="Buah" data-calories="60" data-price="6000"
+                            data-image="images/semangka.jpg">
+                            <td><img src="images/Semangka.jpg" alt="Semangka (1 potong)" width="70"></td>
+                            <td>Semangka (1 potong)</td>
+                            <td>Buah</td>
+                            <td>60 kkal</td>
+                            <td>Rp 6,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Fruit Salad Cup" data-category="Buah" data-calories="140" data-price="17000"
+                            data-image="images/fruit-salad-cup.jpg">
+                            <td><img src="images/Fruit-Salad.jpg" alt="Fruit Salad Cup" width="70"></td>
+                            <td>Fruit Salad Cup</td>
+                            <td>Buah</td>
+                            <td>140 kkal</td>
+                            <td>Rp 17,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Es Teh Manis" data-category="Minuman" data-calories="90" data-price="5000"
+                            data-image="images/es-teh-manis.jpg">
+                            <td><img src="images/Es-Teh-Manis.jpg" alt="Es Teh Manis" width="70"></td>
+                            <td>Es Teh Manis</td>
+                            <td>Minuman</td>
+                            <td>90 kkal</td>
+                            <td>Rp 5,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Air Mineral 600ml" data-category="Minuman" data-calories="0" data-price="4000"
+                            data-image="images/air-mineral-600ml.jpg">
+                            <td><img src="images/Air-Mineral.jpg" alt="Air Mineral 600ml" width="70"></td>
+                            <td>Air Mineral 600ml</td>
+                            <td>Minuman</td>
+                            <td>0 kkal</td>
+                            <td>Rp 4,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr data-name="Jus Alpukat" data-category="Minuman" data-calories="230" data-price="18000"
+                            data-image="images/jus-alpukat.jpg">
+                            <td><img src="images/Jus-Alpukat.jpg" alt="Jus Alpukat" width="70"></td>
+                            <td>Jus Alpukat</td>
+                            <td>Minuman</td>
+                            <td>230 kkal</td>
+                            <td>Rp 18,000</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
-
-            <section class="selected-menu">
-
-                <h3>Menu Terpilih</h3>
-
-                <div id="selectedImages">
-
-                </div>
-
-            </section>
-
-            <section class="summary">
-
-                <h3>Ringkasan Nutrisi</h3>
-
-                <article class="summary-card">
-
-                    <h4>Total Kalori</h4>
-
-                    <p>
-                        <span id="totalCalories">0</span> kkal
-                    </p>
-
-                </article>
-
-                <article class="summary-card">
-
-                    <h4>Total Harga</h4>
-
-                    <p>
-                        Rp <span id="totalPrice">0</span>
-                    </p>
-
-                </article>
-
-            </section>
-
-            <section class="nutrition-status">
-
-                <h3>Kategori Gizi</h3>
-
-                <ul>
-
-                    <li id="statusPokok">
-                         Makanan Pokok
-                    </li>
-
-                    <li id="statusLauk">
-                         Lauk-Pauk
-                    </li>
-
-                    <li id="statusSayur">
-                         Sayur
-                    </li>
-
-                    <li id="statusBuah">
-                         Buah
-                    </li>
-
-                    <li id="statusMinuman">
-                         Minuman
-                    </li>
-
-                </ul>
-
-            </section>
-
-            <section id="balancedBadge" hidden>
-
-                <h3>Menu Seimbang</h3>
-
-                <p>
-                    Semua kategori gizi telah terpenuhi.
-                </p>
-
-            </section>
-
-        </aside>
-
-    </section>
-
-</main>
-
-<footer>
-
-    <p>© 2026 Menu Planner</p>
-
-    <p>
-        Website Perencanaan Menu Makanan Sehat
-    </p>
-
-</footer>
-
-<script src="js/script.js"></script>
-
+            <aside class="planner-sidebar">
+                <section id="emptyState">
+                    <h3>Belum Ada Menu Dipilih</h3>
+                    <p>Silakan pilih menu dari tabel untuk memulai perencanaan menu makanan.</p>
+                </section>
+                <section class="selected-menu">
+                    <h3>Menu Terpilih</h3>
+                    <div id="selectedImages"></div>
+                </section>
+                <section class="summary">
+                    <h3>Ringkasan Nutrisi</h3>
+                    <article class="summary-card">
+                        <h4>Total Kalori</h4>
+                        <p><span id="totalCalories">0</span> kkal</p>
+                    </article>
+                    <article class="summary-card">
+                        <h4>Total Harga</h4>
+                        <p>Rp <span id="totalPrice">0</span></p>
+                    </article>
+                </section>
+                <section class="nutrition-status">
+                    <h3>Kategori Gizi</h3>
+                    <ul>
+                        <li id="statusPokok">Makanan Pokok</li>
+                        <li id="statusLauk">Lauk-Pauk</li>
+                        <li id="statusSayur">Sayur</li>
+                        <li id="statusBuah">Buah</li>
+                        <li id="statusMinuman">Minuman</li>
+                    </ul>
+                </section>
+                <section id="balancedBadge" hidden>
+                    <h3>Menu Seimbang</h3>
+                    <p>Semua kategori gizi telah terpenuhi.</p>
+                </section>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Menu Planner</p>
+        <p>Website Perencanaan Menu Makanan Sehat</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
