@@ -471,6 +471,34 @@ td input[type="checkbox"] {
     color: var(--color-primary);
 }
 
+#selectedImages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.selected-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--bg-primary);
+    border-radius: 12px;
+    padding: 6px 12px 6px 6px;
+    width: 100%;
+}
+
+.selected-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.selected-item span {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-main);
+}
+
 .nutrition-status ul {
     display: flex;
     flex-direction: column;

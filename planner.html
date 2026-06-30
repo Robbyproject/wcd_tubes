@@ -1,175 +1,119 @@
 <!DOCTYPE html>
-
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Planner</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-<header>
-
-    <div class="logo">
-        <h1>Menu Planner</h1>
-    </div>
-
-    <nav>
-
-        <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="planner.html">Planner</a></li>
-        </ul>
-
-    </nav>
-
-</header>
-
-<main>
-
-    <section class="planner-header">
-
-        <h2>Perencanaan Menu Makanan</h2>
-
-        <p>
-            Pilih menu makanan untuk melihat total kalori,
-            total harga, dan status keseimbangan gizi.
-        </p>
-
-    </section>
-
-    <section class="planner-layout">
-
-        <div class="menu-table-area">
-            <h2>Daftar Menu</h2>
-            <p>Pilih menu makanan untuk menghitung total kalori dan harga.</p>
-            
-            <table>
-                <thead>
-                    <tr>
-                        <th>Pilih</th>
-                        <th>Gambar</th>
-                        <th>Nama Menu</th>
-                        <th>Kategori</th>
-                        <th>Kalori</th>
-                        <th>Harga</th>
-                    </tr>
-                </thead>
-                <tbody id="menu-container">
-                    </tbody>
-            </table>
+    <header>
+        <div class="logo">
+            <h1>Menu Planner</h1>
         </div>
 
-        <aside class="planner-sidebar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="planner.html">Planner</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <section id="emptyState">
+    <main>
 
-                <h3>Belum Ada Menu Dipilih</h3>
+        <section class="planner-header">
+            <h2>Perencanaan Menu Makanan</h2>
+            <p>
+                Pilih menu makanan untuk melihat total kalori,
+                total harga, dan status keseimbangan gizi.
+            </p>
+        </section>
 
-                <p>
-                    Silakan pilih menu dari tabel untuk memulai
-                    perencanaan menu makanan.
-                </p>
-
-            </section>
-
-            <section class="selected-menu">
-
-                <h3>Menu Terpilih</h3>
-
-                <div id="selectedImages">
-
-                </div>
-
-            </section>
-
-            <section class="summary">
-
-                <h3>Ringkasan Nutrisi</h3>
-
-                <article class="summary-card">
-
-                    <h4>Total Kalori</h4>
-
+        <section class="planner-layout">
+            <div class="menu-table-area">
+                <h2>Daftar Menu</h2>
+                <p>Pilih menu makanan untuk menghitung total kalori dan harga.</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pilih</th>
+                            <th>Gambar</th>
+                            <th>Nama Menu</th>
+                            <th>Kategori</th>
+                            <th>Kalori</th>
+                            <th>Harga</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-container">
+                        </tbody>
+                </table>
+            </div>
+            <aside class="planner-sidebar">
+                <section id="emptyState">
+                    <h3>Belum Ada Menu Dipilih</h3>
                     <p>
-                        <span id="totalCalories">0</span> kkal
+                        Silakan pilih menu dari tabel untuk memulai
+                        perencanaan menu makanan.
                     </p>
-
-                </article>
-
-                <article class="summary-card">
-
-                    <h4>Total Harga</h4>
-
+                </section>
+                <section class="selected-menu" hidden>
+                    <h3>Menu Terpilih</h3>
+                    <div id="selectedImages">
+                    </div>
+                </section>
+                <section class="summary">
+                    <h3>Ringkasan Nutrisi</h3>
+                    <article class="summary-card">
+                        <h4>Total Kalori</h4>
+                        <p>
+                            <span id="totalCalories">0</span> kkal
+                        </p>
+                    </article>
+                    <article class="summary-card">
+                        <h4>Total Harga</h4>
+                        <p>
+                            Rp <span id="totalPrice">0</span>
+                        </p>
+                    </article>
+                </section>
+                <section class="nutrition-status">
+                    <h3>Kategori Gizi</h3>
+                    <ul>
+                        <li id="statusPokok">
+                            Makanan Pokok
+                        </li>
+                        <li id="statusLauk">
+                            Lauk-Pauk
+                        </li>
+                        <li id="statusSayur">
+                            Sayur
+                        </li>
+                        <li id="statusBuah">
+                            Buah
+                        </li>
+                        <li id="statusMinuman">
+                            Minuman
+                        </li>
+                    </ul>
+                </section>
+                <section id="balancedBadge" hidden>
+                    <h3>Menu Seimbang</h3>
                     <p>
-                        Rp <span id="totalPrice">0</span>
+                        Semua kategori gizi telah terpenuhi.
                     </p>
+                </section>
+            </aside>
+        </section>
+    </main>
 
-                </article>
-
-            </section>
-
-            <section class="nutrition-status">
-
-                <h3>Kategori Gizi</h3>
-
-                <ul>
-
-                    <li id="statusPokok">
-                         Makanan Pokok
-                    </li>
-
-                    <li id="statusLauk">
-                         Lauk-Pauk
-                    </li>
-
-                    <li id="statusSayur">
-                         Sayur
-                    </li>
-
-                    <li id="statusBuah">
-                         Buah
-                    </li>
-
-                    <li id="statusMinuman">
-                         Minuman
-                    </li>
-
-                </ul>
-
-            </section>
-
-            <section id="balancedBadge" hidden>
-
-                <h3>Menu Seimbang</h3>
-
-                <p>
-                    Semua kategori gizi telah terpenuhi.
-                </p>
-
-            </section>
-
-        </aside>
-
-    </section>
-
-</main>
-
-<footer>
-
-    <p>© 2026 Menu Planner</p>
-
-    <p>
-        Website Perencanaan Menu Makanan Sehat
-    </p>
-
-</footer>
-
-<script src="js/script.js"></script>
-
+    <footer>
+        <p>© 2026 Menu Planner</p>
+        <p>
+            Website Perencanaan Menu Makanan Sehat
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
